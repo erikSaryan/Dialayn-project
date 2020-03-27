@@ -524,12 +524,14 @@ select{
 
 
 /* section3 */
+
 .section3{
     padding-top: 38px;
     padding-bottom: 10px;
     background: url("../files/img/bg-sect3.jpg") no-repeat center top #F4F5F4;
-    min-height: 543px;
+    min-height: 350px;
 }
+
 .complications-wrap{
     background: url("../files/img/complications-bg.png") repeat-y;
     -webkit-border-radius: 10px;
@@ -537,19 +539,52 @@ select{
     border-radius: 10px;
     padding: 19px 27px 0;
     margin: 42px 0 0 25px;
+    min-height : 350px;
 }
-.complications-block{
+
+ul.menu {
+    list-style-type: none;
     display: inline-block;
     vertical-align: top;
     width: 345px;
+
 }
+ul.menu li {
+    padding: 5px;
+    font-size: 16px;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+ul.menu li .complications-text {
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    padding-left: 60px;
+    color: #3E789F;
+    background: url("../files/img/spritesheet_3.png") no-repeat; 
+}
+ul.menu li.err_1 .complications-text {
+    background-position: 0 0;
+}
+ul.menu li.err_2 .complications-text {
+    background-position: 0 -45px;
+}
+ul.menu li.err_3 .complications-text {
+    background-position: 0 -90px;
+}
+ul.menu li.err_4 .complications-text {
+    background-position: 0 -135px;
+}
+ul.menu li.err_5 .complications-text {
+    background-position: 0 -180px;
+}
+
 .complications-text{
     font-size: 24px;
     line-height: 26px;
-    background: url("../files/img/complications-danger.png") no-repeat left top;
-    padding: 15px 0 30px 60px;
+    padding: 5px 0 30px 60px;
     min-height: 36px;
 }
+
 /*end section3*/
 
 
